@@ -54,8 +54,7 @@ jobs:
       - name: 🐳 Build Docker image
         run: docker build -t atefz/example-app:latest .
 
-      - name: 🔖 Retag image (force correct tag)
-        run: docker tag example-app:latest atefz/example-app:latest || true
+
 
       - name: 🔍 Debug docker images full output
         run: docker images --format "{{.Repository}}:{{.Tag}} {{.ID}}"
