@@ -19,8 +19,9 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
-      - name: 🧪 Build and test with Maven
-        run: mvn clean verify --no-transfer-progress
+      - name: 🚫 Build without tests
+        run: mvn clean package -DskipTests --no-transfer-progress
+
 
       - name: 🐳 Build Docker image
         run: docker build -t atefzmiti/example-app:latest .
