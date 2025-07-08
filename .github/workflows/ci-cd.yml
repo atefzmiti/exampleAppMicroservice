@@ -52,7 +52,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: 🐳 Build Docker image
-        run: docker build -t atefz/example-app:latest .
+        run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/example-app:latest .
 
       - name: 🔍 Verify built images
         run: docker images
