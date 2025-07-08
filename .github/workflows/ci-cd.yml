@@ -58,6 +58,7 @@ jobs:
         run: docker images
 
 
+
       - name: 🔍 Debug docker images full output
         run: docker images --format "{{.Repository}}:{{.Tag}} {{.ID}}"
 
