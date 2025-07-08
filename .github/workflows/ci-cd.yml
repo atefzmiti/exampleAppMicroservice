@@ -24,7 +24,7 @@ jobs:
         run: mvn clean package -DskipTests --no-transfer-progress
 
       - name: 💾 Upload JAR to artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: jar-files
           path: target/*.jar
