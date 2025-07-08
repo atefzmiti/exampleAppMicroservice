@@ -24,7 +24,7 @@ jobs:
 
 
       - name: 🐳 Build Docker image
-        run: docker build -t atefzmiti/example-app:latest .
+        run: docker build -t atefz/example-app:latest .
 
       - name: 🔐 Login to DockerHub
         uses: docker/login-action@v3
