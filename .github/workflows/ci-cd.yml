@@ -54,5 +54,8 @@ jobs:
       - name: 🐳 Build Docker image
         run: docker build -t atefz/example-app:latest .
 
+      - name: 🔍 List local Docker images (debug)
+        run: docker images
+
       - name: 📤 Push Docker image
         run: docker push atefz/example-app:latest
