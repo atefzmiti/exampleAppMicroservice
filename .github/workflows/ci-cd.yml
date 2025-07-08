@@ -33,4 +33,4 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: 📤 Push Docker image
-        run: docker push atefzmiti/example-app:latest
+        run: docker push atefz/example-app:latest
